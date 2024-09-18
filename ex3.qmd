@@ -1,0 +1,26 @@
+---
+title: "Introduction to Linear Regression"
+subtitle: "Lecture 1"
+format:
+  live-revealjs:
+    webr:
+      packages:
+        - ggplot2
+        - dplyr
+        - tidyverse
+        - broom
+        - repr
+        - gridExtra
+        - cowplot
+engine: knitr
+filters:
+  - webr
+---
+
+This is a webR-enabled code cell in a Quarto HTML document.
+
+```{webr-r}
+fit <- lm(mpg ~ am, data = mtcars)
+
+summary(fit)
+```
